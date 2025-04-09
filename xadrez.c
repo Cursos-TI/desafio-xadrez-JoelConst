@@ -1,4 +1,4 @@
-int i; // Variável auxiliar para os loops
+int i, j; // Variáveis auxiliares para os loops
 
 // Movimento da Torre: 5 casas para a Direita
 printf("Movimento da Torre:\n");
@@ -33,6 +33,23 @@ do {
     printf("Esquerda\n");
     i++;
 } while(i <= casasRainha);
+
+printf("\n");
+
+// Movimento do Cavalo: 2 casas para Baixo e 1 para Esquerda
+printf("Movimento do Cavalo:\n");
+
+// Loop externo for (para cada movimento do cavalo)
+for(i = 1; i <= casasBaixoCavalo; i++) {
+    printf("Baixo\n");
+}
+
+// Loop interno while (movimento perpendicular para Esquerda)
+j = 1;
+while(j <= casasEsquerdaCavalo) {
+    printf("Esquerda\n");
+    j++;
+}
 
 printf("\n");
 
